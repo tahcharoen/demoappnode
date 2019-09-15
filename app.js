@@ -11,7 +11,6 @@ var body = require('body-parser');
 app.use(body.urlencoded({extended: true}));
 app.use(body.json());  
 // เมื่อมีการใช้ Method POST From
-
 app.set('view engine','ejs');
 
 app.get('/home/:title',function(req,res){
@@ -51,6 +50,8 @@ app.get('/listdata',function(req,res){
 	  con.query(sql, function (err, result) {
 	    
 	    res.render('listdata',{data:result});
+
+	    console.log('Connect member');
 
 	   
 	  });
