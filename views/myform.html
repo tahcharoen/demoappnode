@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello Node js Myform.</title>
+        <link rel=stylesheet href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+       
+    </head>
+    <body style="background: green;color:#fff">
+        <div align="center">
+            <h2>Hello Node js .. </h2>
+
+
+            <div class="col-md-4">
+                
+            
+            <form action="/senddata" method="get" role="form">
+            
+                <div class="form-group">
+                    <label class="sr-only" for="">label</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Input field">
+                </div>
+            
+                
+            
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+
+            <form action="/senddatapost" method="post" role="form">
+            
+                <div class="form-group">
+                    <label class="sr-only" for="">label</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Input field">
+                </div>
+
+                 <div class="form-group">
+                    <label class="sr-only" for="">label</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Input field">
+                </div>
+            
+                
+            
+                <button type="submit" class="btn btn-primary">Submit POST</button>
+            </form>
+
+            </div>
+        </div>
+       
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hello Node js List Data</title>
+         <link rel=stylesheet href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+       
+       
+    </head>
+    <body style="">
+        <div align="center">
+            <h2>Hello Node js Data List</h2>
+
+           
+
+
+                <table class="table table-bordered">
+                  <caption>Optional table caption.</caption>
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Username</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <% for(var i=0; i < data.length; i++) { %>
+                    <tr>
+                      <td><%=i+1%></td>
+                      <td><%= data[i].fname_gb %></td>
+                      <td><%= data[i].lname_gb %></td>
+                      <td><%= data[i].m_login %></td>
+                    </tr>
+                     <% } %>
+                    
+                  </tbody>
+                </table>
+
+            <% include txtinclude.ejs %>
+        </div>
+       
+    </body>
+</html>
